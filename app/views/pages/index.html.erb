@@ -146,6 +146,7 @@
 							<div class="well"> 
 								<h4>Post Recientes</h4>
 								<% @articles.each do |a| %>
+								Creado por: <%= a.user.username %><br />
 								<strong><%= link_to a.title, a %></strong>
 								<p><%= truncate(a.body) %></p>
 								<% end %>
