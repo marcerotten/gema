@@ -22,7 +22,11 @@
         
         <li><%= link_to "Contáctanos", pages_contact_path %></li>
         <li><%= link_to "Sobre Nosotros", pages_about_path %></li>
+        <li><%= link_to "Crear un Artículo", new_article_path %></li>
+        
+        
         <% if !current_user %>
+        
         <li><%= link_to "Registrarse", new_user_registration_path %></li>
         <li><%= link_to "Iniciar Sesión", new_user_session_path %></li>
        
